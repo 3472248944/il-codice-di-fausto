@@ -1,0 +1,12 @@
+// scrivi un programma che abbia una sola entrata, 16 uscite ognuna delle quali abbia ampiezza n 1/dove n è il numero del canale
+// il simbolo divide si fa con <:
+import("stdfaust.lib");
+process =_<:/(1),/(2),/(3),/(4),/(5),/(6),/(7),/(8),/(9),/(10),/(11),/(12),/(13),/(14),/(15);
+
+// scrivi un programma che abbia 16 entrate e 2 uscite rispettivamente per i canali pari e dispari assicurandosi di non avere mai un  valore superiore a uno per ciascuna uscita 
+//combina unisce i canali in entrata in uno o più canali in uscita osservando un ordine logico, l'ordine logico è smistare i canali uno dopo l'altro in ordine
+
+import("stdfaust.lib");
+process = si.bus(16):> _/(8),_/(8);
+
+scrivi un programma che abbia 16 entrate 4 uscite con ampiezza normalizzata ad 1. Delle quattro uscite la 2 e la 4 devono avere fse inversa 
